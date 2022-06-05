@@ -18,3 +18,9 @@ bool Utils::isValidIdentifier(std::string identifier) {
 
     return true;
 }
+
+bool Utils::isNumber(std::string numberString)
+{
+    return !numberString.empty() && std::find_if(numberString.begin(),
+        numberString.end(), [](unsigned char c) { return !std::isdigit(c); }) == numberString.end();
+}

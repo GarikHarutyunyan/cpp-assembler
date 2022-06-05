@@ -5,6 +5,7 @@
 
 namespace Utils {
 	bool isValidIdentifier(std::string);
+	bool isNumber(std::string);
 };
 
 #endif // UTILS_H
