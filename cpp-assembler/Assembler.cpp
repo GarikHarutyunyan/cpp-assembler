@@ -8,7 +8,6 @@
 Assembler::Assembler() {
 this->instructionsMap = {
         {"mov",byte("00000011")},
-        {"jmp",byte("00100000")},
 
         {"add",byte("00000000")},
         {"sub",byte("00000001")},
@@ -159,7 +158,7 @@ void Assembler::run(std::string fileName) {
 
 
                 ///// Argument 2
-                if (instruction != "mov")
+                if (instruction != "mov" && instruction != "not")
                 {
                     while (content[0] == ' ') {
                         content.erase(0, 1);
