@@ -21,7 +21,7 @@ Make sure there are no spaces that proceed a label.
 Labels can be used only after definition.
 <pre>LABEL EXAMPLE1</pre>
 <pre>label example2</pre>
-</br></br></br>
+</br>
 
 ### Registers
 Registers' names is also case-insensitive, besides that they can be used in three different ways.
@@ -34,7 +34,7 @@ There are 15 registers(R0-R14), R0 and R1 have alias names input and output whic
 <pre>INPUT,R3,R4</pre>
 <pre>INPUT,INPUT,OUTPUT</pre>
 
-</br></br></br>
+</br>
 
 ### Instructions
 
@@ -70,6 +70,7 @@ There are 15 registers(R0-R14), R0 and R1 have alias names input and output whic
 * The <code>MOE</code> instruction checks if ARGUMENT1 is more than or equal to ARGUMENT2, if it is true start execution from label which name is ARGUMENT3.
 <pre>MOE 14,14,labelName</pre>
 
+</br>
 
 ### Code Example
 
